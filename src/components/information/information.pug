@@ -1,0 +1,11 @@
+mixin information(options)
+  -
+
+    var mixinClassName = options.name
+    var leftText = "leftText"
+    var rightText = "rightText"
+    leftText += options.leftText ? "text" : ""  
+    rightText += options.rightText ? "text" : ""    
+  .information(class="" + mixinClassName + " " )        
+    span()=options.leftText
+    span()=options.rightText

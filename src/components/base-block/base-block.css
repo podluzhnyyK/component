@@ -1,0 +1,174 @@
+.base-block {
+  display: flex;
+  align-items: flex-end;
+  font-size: 14px;
+  line-height: 20px;
+  box-sizing: border-box;
+  padding: 15px;
+  color: #000000;
+}
+
+.colum1row1 {
+  grid-area: 1/1/1/1;
+}
+
+.colum1row2 {
+  grid-area: 2/1/3/1;
+}
+
+.colum2row1 {
+  grid-area: 1/2/1/2;
+}
+
+.colum2row2 {
+  grid-area: 2/2/2/2;
+}
+
+.colum3row1 {
+  grid-area: 1/3/1/3;
+}
+
+.colum3row2 {
+  grid-area: 2/3/2/3;
+}
+
+.colum3row2 {
+  grid-area: 2/3/2/3;
+}
+
+.colum1colum2row1row2 {
+  grid-area: 1/1/3/3;
+}
+
+.colum1colum2row2 {
+  grid-area: 2/1/3/3;
+}
+
+@media (max-width: 480px) {
+  .colum1colum2row2 {
+    grid-area: 2/1/3/3;
+  }
+}
+
+.colum2colum3row1row2 {
+  grid-area: 1/2/3/4;
+}
+
+.colum2colum3row1row1 {
+  grid-area: 1/2/2/4;
+}
+
+@media (max-width: 480px) {
+  .colum2colum3row1row1 {
+    grid-area: 1/1/2/3;
+  }
+}
+
+.half-blue {
+  background-color: #a2a9b7;
+}
+
+.blue {
+  background-color: #90bce8;
+}
+
+.yellow {
+  background-color: #febf26;
+}
+
+.half-green {
+  background-color: #e3ebd3;
+}
+
+.half-red {
+  background-color: #ffaa87;
+}
+
+.red {
+  background-color: #f55e62;
+}
+
+.grey {
+  background-color: #c4c4c4;
+}
+
+.half-grey {
+  background-color: #e8ebed;
+}
+
+.purple {
+  background-color: #c7abd4;
+}
+
+.bg-img {
+  background-image: url("img/bg-block.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.small-block {
+  min-height: 155px;
+}
+
+.middle-block {
+  min-height: 241px;
+}
+
+@media (max-width: 480px) {
+  .middle-block-md {
+    min-height: 102px;
+  }
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+.flex-start {
+  align-items: flex-start;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+@media (max-width: 480px) {
+  .flex-start {
+    padding-left: 6%;
+    padding-right: 6%;
+    max-height: 214px;
+    overflow-y: scroll;
+  }
+}
+
+.information-block {
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .colum1row3-md {
+    grid-area: 3/1/3/2;
+  }
+
+  .colum2row3-md {
+    grid-area: 3/2/3/2;
+  }
+
+  .colum2row2-md {
+    grid-area: 2/2/2/2;
+  }
+
+  .colum1row2-md {
+    grid-area: 2/1/2/1;
+  }
+
+  .colum1row3-md {
+    grid-area: 3/1/3/2;
+  }
+
+  .colum2row3 {
+    grid-area: 3/2/3/3;
+  }
+}

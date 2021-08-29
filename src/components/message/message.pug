@@ -1,0 +1,9 @@
+mixin message(src, options)
+  -
+
+    var mixinClassName = options.name
+    var text = "text"
+    text += options.text ? "text" : ""      
+  .message(class="" + mixinClassName)
+    img(class="message__avatar" src=src)       
+    p(class="message__text")=options.text   

@@ -1,0 +1,111 @@
+@import "normalize.css";
+
+@import "components/base-block/base-block.css";
+@import "components/line/line.css";
+@import "components/information/information.css";
+
+@import "components/message/message.css";
+@import "components/data/data.css";
+@import "components/button/button.css";
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+.container {
+  max-width: 743px;
+  margin: 0 auto;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.grid-block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 10px 10px;
+}
+
+@media (max-width: 480px) {
+  .grid-block-md {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .grid-block-hidden {
+    display: none;
+  }
+
+  .order1-md {
+    order: 1;
+  }
+
+  .order2-md {
+    order: 2;
+  }
+
+  .order3-md {
+    order: 3;
+  }
+}
+
+/* dialogue */
+
+.container-dialogue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialogue-block {
+  width: 651px;
+  height: 757px;
+  background-image: url("img/dialogue.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dialogue-chat {
+  width: 100%;
+  height: 516px;
+  padding-top: 41px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.dialogue-control {
+  display: flex;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 40px;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.textarea {
+  width: 100%;
+  height: 129px;
+  resize: none;
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  border-radius: 4px;
+}

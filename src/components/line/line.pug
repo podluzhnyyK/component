@@ -1,0 +1,10 @@
+mixin line(options)
+  -
+    
+    var mixinClassName = options.name
+    var text = "text"
+    text += options.text ? "text" : "" 
+    var bgColor = ""
+    bgColor += options.bgColor ? "half-grey" : ""   
+  .line(class="" + mixinClassName + " " + options.bgColor)    
+      span()=options.text

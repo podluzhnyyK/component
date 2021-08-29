@@ -1,0 +1,39 @@
+include ./components/button/button
+include ./components/message/message
+include ./components/data/data
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title dialogue
+
+    link(rel="stylesheet" type="text/css" href="main.css")
+
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet")
+
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet")    
+
+
+  body
+    .container-dialogue
+      .dialogue-block
+        .dialogue-chat
+          +message("img/avatar.png", {text: "Это означает, что в Вашем доме, офисе, кабинете, мастерской хранятся ценности бóльшие, чем просто деньги или драгоценности, - культурные ценности. Произведения искусства, антиквариат, иные предметы коллекционирования – все это имущество, безусловно высокая стоимость которого. ",
+           name: ""})
+          +message("img/avatar.png", {text: "Это означает,", name: "message-reverse"})
+          +message("img/avatar.png", {text: "доме, офисе, кабинете, мастерской", name: ""})
+          +data({text: "21 октября 2017", name: ""})
+          +message("img/avatar.png", {text: "Это означает,", name: "message-reverse"})
+          +message("img/avatar.png", {text: "доме, офисе, кабинете, мастерской", name: ""})
+        .dialogue-control
+          textarea(class='textarea')
+          +btn({title: "Отправить"})
+
+  script(src='main.bundle.js')
+       

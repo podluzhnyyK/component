@@ -1,0 +1,12 @@
+mixin base-block(options)
+  -
+
+    var mixinClassName = options.name
+    var text = "text"
+    text += options.text ? "text" : "" 
+    var bgColor = ""
+    bgColor += options.bgColor ? "half-grey" : ""   
+  .base-block(class="" + mixinClassName + " " + options.bgColor)        
+    span()=options.text
+    block
+        

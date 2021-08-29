@@ -1,0 +1,10 @@
+mixin data(options)
+  -
+
+    var mixinClassName = options.name
+    var text = "text"
+    text += options.text ? "text" : ""      
+  .data(class="" + mixinClassName)
+    div(class="data__line")       
+    span(class="data__text")=options.text
+    div(class="data__line")   

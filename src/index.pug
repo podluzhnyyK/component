@@ -1,0 +1,53 @@
+include ./components/base-block/base-block
+include ./components/line/line
+include ./components/information/information
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title index
+
+    link(rel="stylesheet" type="text/css" href="main.css")
+
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet")
+
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet")  
+
+
+  body
+    
+    +line({text: "header", name: "", bgColor: "half-grey"})
+    .container
+      .grid-block.order2-md
+        +base-block({text: "Чувство однократно", name: "colum3row1 middle-block middle-block-md color-white", bgColor: "half-blue"})
+        +base-block({text: "Морено", name: "colum3row2 middle-block middle-block-md color-white", bgColor: "half-blue"})
+        +base-block({text: "Гений непредвзято понимает под собой конфликт. Закон внешнего мира, очевидно, реально подчеркивает аксиоматичный здравый смысл. Культ джайнизма включает в себя поклонение Махавире и другим тиртханкарам, поэтому закон исключённого третьего индуцирует изоморфный ротор.",
+         name: "colum1colum2row1row2 color-white flex-start", bgColor: "half-blue"})
+      .grid-block.grid-block-md.order1-md
+        +base-block({text: "Наши сотрудники", name: "colum1row1 small-block", bgColor: "half-grey"})
+        +base-block({text: "Просветляет понимающий тест", name: "colum2row1", bgColor: "half-grey"})
+        +base-block({text: "Интроекция", name: "colum3row1 colum2row3-md small-block", bgColor: "blue"})
+        +base-block({text: "Конформизм", name: "colum1colum2row2 small-block", bgColor: "half-grey"})
+        +base-block({text: "Наши сотрудники", name: "colum3row2 colum1row3-md small-block", bgColor: "yellow"})          
+      .grid-block.grid-block-hidden
+        +base-block({text: "Понятие модернизации понимает механизм власти", name: "colum1row1 middle-block", bgColor: "half-green"})
+        +base-block({text: "Наши сотрудники", name: "colum1row2 color-white bg-img middle-block", bgColor: "half-grey"})
+        +base-block({text: "", name: "colum2colum3row1row2 information-block", bgColor: "half-green"})
+          +information({leftText: "Фамилия", rightText: "Мамай", name: ""})
+          +information({leftText: "Имя и отчество", rightText: "Станиславаленина Владимировна", name: ""})
+          +information({leftText: "Номер полиса выдан заведомо ложный", rightText: "01354879", name: ""})
+          +information({leftText: "Дата рождения", rightText: "01.12.1976", name: ""})
+          +information({leftText: "Телефон", rightText: "+79254218069", name: ""})
+      .grid-block.grid-block-md.order3-md  
+        +base-block({text: "Лидерство", name: "colum1row1 colum1row2-md small-block", bgColor: "half-red"})
+        +base-block({text: "Однако", name: "colum2colum3row1row1 small-block", bgColor: "half-red"})
+        +base-block({text: "Невероятный гений", name: "colum1row2 colum2row2-md small-block", bgColor: "red"})
+        +base-block({text: "Точка перегиба", name: "colum2row2 colum1row3-md colum2row2-md small-block", bgColor: "half-red"})
+        +base-block({text: "Длина вектора", name: "colum3row2 colum2row3 small-block", bgColor: "purple"})
+    +line({text: "footer", name: "", bgColor: "half-grey"})

@@ -1,0 +1,21 @@
+.message {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 19px;
+}
+
+.message-reverse {
+  flex-direction: row-reverse;
+}
+
+.message__text {
+  margin: 0;
+  max-width: 470px;
+  background-color: #f1f3f5;
+  padding: 15px;
+  border-radius: 5px;
+}
